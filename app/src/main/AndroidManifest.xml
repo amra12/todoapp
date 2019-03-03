@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prj.ShoppingList">
+
+    <application
+        android:name="com.prj.ShoppingList.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Shopping List"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.prj.ShoppingList.MainActivity"
+            android:label="My List"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name="com.prj.ShoppingList.AddItem"></activity>
+        <activity android:name="com.prj.ShoppingList.EditItem"
+            android:label="Create a New Item"
+            ></activity>
+        <activity android:name="com.prj.ShoppingList.BackgroundActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
